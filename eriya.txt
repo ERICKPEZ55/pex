@@ -1,0 +1,82 @@
+
+BOGDCDMFORD014+APRENDIZ@BOGDCDMFORD014 MINGW64 ~/Desktop/eri
+$ git init
+Initialized empty Git repository in C:/Users/APRENDIZ/Desktop/eri/.git/
+
+BOGDCDMFORD014+APRENDIZ@BOGDCDMFORD014 MINGW64 ~/Desktop/eri (master)
+$ git add .
+
+BOGDCDMFORD014+APRENDIZ@BOGDCDMFORD014 MINGW64 ~/Desktop/eri (master)
+$ git commit -m "prueba1"
+[master (root-commit) a2e2690] prueba1
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 eriya.txt
+
+BOGDCDMFORD014+APRENDIZ@BOGDCDMFORD014 MINGW64 ~/Desktop/eri (master)
+$ git remote add origin https://github.com/ERICKPEZ55/pex.git
+
+BOGDCDMFORD014+APRENDIZ@BOGDCDMFORD014 MINGW64 ~/Desktop/eri (master)
+$ git branch -M main
+
+BOGDCDMFORD014+APRENDIZ@BOGDCDMFORD014 MINGW64 ~/Desktop/eri (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 212 bytes | 212.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/ERICKPEZ55/pex.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+BOGDCDMFORD014+APRENDIZ@BOGDCDMFORD014 MINGW64 ~/Desktop/eri (main)
+$ git log .
+commit a2e2690f27630297c7b3675e7a6d89546672836f (HEAD -> main, origin/main)
+Author: Legendaria2 <santyq2003@gmail.com>
+Date:   Thu Oct 24 15:37:13 2024 -0500
+
+    prueba1
+
+BOGDCDMFORD014+APRENDIZ@BOGDCDMFORD014 MINGW64 ~/Desktop/eri (main)
+$ git add .
+
+BOGDCDMFORD014+APRENDIZ@BOGDCDMFORD014 MINGW64 ~/Desktop/eri (main)
+$ git commit -m "agregue el laura te amo"
+[main e091b10] agregue el laura te amo
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 teamolaura.txt
+
+BOGDCDMFORD014+APRENDIZ@BOGDCDMFORD014 MINGW64 ~/Desktop/eri (main)
+$ git log --oneline
+e091b10 (HEAD -> main) agregue el laura te amo
+a2e2690 (origin/main) prueba1
+
+BOGDCDMFORD014+APRENDIZ@BOGDCDMFORD014 MINGW64 ~/Desktop/eri (main)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 257 bytes | 257.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/ERICKPEZ55/pex.git
+   a2e2690..e091b10  main -> main
+
+BOGDCDMFORD014+APRENDIZ@BOGDCDMFORD014 MINGW64 ~/Desktop/eri (main)
+$ git log --oneline
+e091b10 (HEAD -> main, origin/main) agregue el laura te amo
+a2e2690 prueba1
+
+BOGDCDMFORD014+APRENDIZ@BOGDCDMFORD014 MINGW64 ~/Desktop/eri (main)
+$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 955 bytes | 119.00 KiB/s, done.
+From https://github.com/ERICKPEZ55/pex
+   e091b10..4abc0b6  main       -> origin/main
+Updating e091b10..4abc0b6
+Fast-forward
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
